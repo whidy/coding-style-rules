@@ -137,7 +137,7 @@ module.exports = {
             allowShortCircuit: true
         }],
         'vue/max-len': ['error', {
-            code: 140,
+            code: 160,
             template: 999,
             tabWidth: 2,
             comments: 999,
