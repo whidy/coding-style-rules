@@ -63,7 +63,8 @@ $ vue --version
   // "path-autocomplete.pathMappings": {
   //   "@": "${folder}/src"
   // },
-  "vetur.format.defaultFormatter.html": "prettier"
+  "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.validation.template": false
 }
 ```
 
@@ -158,9 +159,7 @@ module.exports = {
     }],
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'vue/no-unused-vars': ['off', {
-      ignorePattern: 'scope'
-    }],
+    'vue/no-unused-vars': 'off',
     'vue/html-closing-bracket-newline': [
       2,
       {
