@@ -1,8 +1,6 @@
 # Vue.js Project Coding Style Rules
 
-这是一个Vue.js项目编码规范示例项目。目前采用该套方案的项目包括：
-
-* [万丈工作台-Web](http://gitlab.3361.com/infinite/desktop/desktop-frontend)
+这是一个Vue.js项目编码规范示例项目。最初是用于公司前端团队使用，现提出另存一份于此。
 
 下面将为大家详细介绍该套规范的魅力。
 
