@@ -61,14 +61,18 @@ $ vue --version
   // "path-autocomplete.pathMappings": {
   //   "@": "${folder}/src"
   // },
-  "vetur.format.defaultFormatter.html": "prettier",
+  // "vetur.format.defaultFormatter.html": "prettier",
   "vetur.validation.template": false
 }
 ```
 
 > `Path Autocomplete` 根据个人需要开启或关闭，需要插件支持[Path Autocomplete](https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete)
 
+> 【2020年09月24日】当然你也可以考虑使用[Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)。
+
 > 另外特别注意，此时，你的VSCode已经装有[prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)插件，并启用。
+
+> 【2020年09月24日】近期[Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)更新到了[0.28.0](https://marketplace.visualstudio.com/items/octref.vetur/changelog)，其中默认的HTML formatter变更为`prettier`，故可以移除上述配置中的`"vetur.format.defaultFormatter.html": "prettier",`。
 
 #### 添加prettier配置文件
 
