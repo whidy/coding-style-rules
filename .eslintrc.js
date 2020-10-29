@@ -15,7 +15,7 @@ module.exports = {
     'func-names': ['error', 'never'],
     'no-unused-vars': ['error', { args: 'none' }],
     quotes: [2, 'single'],
-    semi: [2, 'never'],
+    semi: [2, 'always'],
     'max-len': 'off',
     'no-underscore-dangle': ['error', { allow: ['_form', '_queries'] }],
     'no-param-reassign': ['error', { props: false }],
@@ -62,4 +62,4 @@ module.exports = {
       }
     ]
   }
-}
+};
