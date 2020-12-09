@@ -43,6 +43,7 @@ module.exports = {
     'vue/no-unused-vars': ['off', {
       ignorePattern: 'scope'
     }],
+    'vue/valid-v-model': ['off'], // antd vue component a-modal
     'vue/html-closing-bracket-newline': [
       2,
       {
