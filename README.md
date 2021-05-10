@@ -125,45 +125,43 @@ module.exports = {
   rules: {
     indent: ['error', 2],
     'func-names': ['error', 'never'],
-    'no-unused-vars': ['error', {
-      args: 'none'
-    }],
-    quotes: [2, 'single'],
-    semi: [2, 'never'],
+    'no-unused-vars': ['error', { args: 'none' }],
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
     'max-len': 'off',
-    'no-underscore-dangle': ['error', {
-      allow: ['_form', '_queries']
-    }],
-    'no-param-reassign': ['error', {
-      props: false
-    }],
+    'no-underscore-dangle': ['error', { allow: ['_form', '_queries'] }],
+    'no-param-reassign': ['error', { props: false }],
     'consistent-return': 'off',
-    'no-unused-expressions': ['error', {
-      allowShortCircuit: true
-    }],
-    'vue/max-len': ['error', {
-      code: 160,
-      template: 999,
-      tabWidth: 2,
-      comments: 999,
-      ignorePattern: '',
-      ignoreComments: false,
-      ignoreTrailingComments: false,
-      ignoreUrls: false,
-      ignoreStrings: false,
-      ignoreTemplateLiterals: false,
-      ignoreRegExpLiterals: false,
-      ignoreHTMLAttributeValues: false,
-      ignoreHTMLTextContents: false
-    }],
-    'comma-dangle': ['error', 'never'],
-    'no-multiple-empty-lines': ['error', {
-      max: 8,
-      maxEOF: 1
-    }],
+    'no-unused-expressions': ['error', { allowShortCircuit: true }],
+    'vue/max-len': [
+      'error',
+      {
+        code: 140,
+        template: 999,
+        tabWidth: 2,
+        comments: 999,
+        ignorePattern: '',
+        ignoreComments: false,
+        ignoreTrailingComments: false,
+        ignoreUrls: false,
+        ignoreStrings: false,
+        ignoreTemplateLiterals: false,
+        ignoreRegExpLiterals: false,
+        ignoreHTMLAttributeValues: false,
+        ignoreHTMLTextContents: false
+      }
+    ],
+    'comma-dangle': ['error', 'only-multiline'],
+    'no-multiple-empty-lines': ['error', { max: 8, maxEOF: 1 }],
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'vue/no-unused-vars': 'off',
+    'vue/no-unused-vars': [
+      'off',
+      {
+        ignorePattern: 'scope'
+      }
+    ],
+    'vue/valid-v-model': ['off'], // antd vue component a-modal
     'vue/html-closing-bracket-newline': [
       2,
       {
